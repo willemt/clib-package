@@ -64,7 +64,7 @@ describe("clib_package_install", {
   });
 
   it("should install itself", {
-    clib_package_t *pkg = clib_package_new_from_slug("stephenmathieson/clib-package", 0);
+    clib_package_t *pkg = clib_package_new_from_slug("willemt/clib-package", 0);
     assert(pkg);
     assert(0 == clib_package_install(pkg, "./test/fixtures/", 0));
     assert(0 == fs_exists("./test/fixtures/"));
